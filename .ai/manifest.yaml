@@ -1,0 +1,64 @@
+schema_version: "1.0"
+id: victorkvs-engineering-portfolio
+name: Viktor Kulichenko Engineering Portfolio
+type: portfolio-root
+status: active
+
+identity:
+  name: Viktor Kulichenko
+  roles:
+    - security-architect
+    - ai-systems-engineer
+    - software-engineer
+
+principles:
+  - evidence-driven-decisions
+  - security-by-design
+  - minimal-reliable-solutions
+  - reproducible-engineering
+  - human-and-agent-readable-knowledge
+
+domains:
+  security:
+    projects:
+      - secgraph
+    topics:
+      - security-architecture
+      - devsecops
+      - osint
+      - threat-modeling
+  ai:
+    projects:
+      - mindforge
+      - mindforge-studio
+      - ai-neural-networks
+    topics:
+      - agents
+      - rag
+      - mcp
+      - knowledge-graphs
+  engineering:
+    languages:
+      - python
+      - go
+      - cpp
+    topics:
+      - backend
+      - web
+      - databases
+      - linux
+      - containers
+  knowledge:
+    planned_repositories:
+      - engineering-knowledge
+      - security-knowledge
+      - product-knowledge
+      - agent-roles
+
+protected_repositories:
+  - OSINT_deepseek_poc
+  - PX00
+
+navigation:
+  github_profile: https://github.com/VictorKVS
+  repository: https://github.com/VictorKVS/VictorKVS
