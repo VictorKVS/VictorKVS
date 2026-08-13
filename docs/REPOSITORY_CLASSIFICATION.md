@@ -18,6 +18,26 @@ This register drives portfolio normalization. It is intentionally non-destructiv
 | `Flask` | Description identifies Seminar 1 / introduction to Flask; old repository line | `LEARNING` | Preserve as learning history |
 | `Pyton` | Description explicitly says `ДЗ GB`; last push 2024-03-19 | `LEARNING` | Preserve; candidate for later learning-index grouping |
 
+## Product/spec/profile review
+
+| Repository | Evidence | Classification | Action |
+|---|---|---|---|
+| `PRODUCT_SPEC_UniversalAgent` | Last visible commit 2025-11-25. Contains substantive Universal Agent product specification, MVP architecture, capability/policy model, roadmap and architecture posters; it is primarily specification/governance material rather than the current implementation repository. | `MERGE-CANDIDATE` | Preserve as specification provenance. Later migrate unique validated product/architecture material into the canonical Universal Agent documentation only after comparison; do not physically merge yet. |
+| `PRODUCT_SPEC_UniversalAgent-v2.0` | Public repository is empty (`size: 0`). | `ARCHIVE` | Preserve as historical version placeholder; exclude from product foreground. |
+| `AI-Product-Architect` | Public repository is empty (`size: 0`). | `ARCHIVE` | Preserve as role/product-direction placeholder; exclude from public product layer. |
+| `AI-Trainer-Professional` | Last visible commit 2025-11-25. README states it contains solutions to two mandatory AI-trainer test tasks, each with algorithm description and test data. | `LEARNING` | Preserve as professional/algorithmic exercise evidence; place in learning/journey layer rather than Featured Engineering. |
+| `OSINT_Python_Go_Security_Automation` | Public repository is empty (`size: 0`). | `ARCHIVE` | Preserve placeholder/history; do not confuse with the active `OSINT_deepseek` product line. |
+
+### Universal Agent lineage conclusion
+
+The Universal Agent material now separates cleanly into:
+
+1. `PRODUCT_SPEC_UniversalAgent` — product/architecture specification provenance;
+2. `PRODUCT_SPEC_UniversalAgent-v2.0` — empty historical placeholder;
+3. `MVP` — current inspectable implementation/prototype line used by the public evidence page.
+
+The specification repository is not a second product. It is a `MERGE-CANDIDATE` only in the documentation/provenance sense, and no physical merge is authorized until unique content and link dependencies are checked.
+
 ## AI-agent lineage review
 
 | Repository | Evidence | Classification | Action |
