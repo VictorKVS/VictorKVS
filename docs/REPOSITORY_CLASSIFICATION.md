@@ -18,6 +18,17 @@ This register drives portfolio normalization. It is intentionally non-destructiv
 | `Flask` | Description identifies Seminar 1 / introduction to Flask; old repository line | `LEARNING` | Preserve as learning history |
 | `Pyton` | Description explicitly says `ДЗ GB`; last push 2024-03-19 | `LEARNING` | Preserve; candidate for later learning-index grouping |
 
+## AI-agent lineage review
+
+| Repository | Evidence | Classification | Action |
+|---|---|---|---|
+| `BotFabrika` | Last visible commit 2025-05-03. Repository contains project-installer code, a large YAML structure specification and `ProjectsBotArchitect_AI`; README is effectively empty. | `ARCHIVE` | Preserve as an early agent-factory implementation/specification line; do not present as a current product. |
+| `BotFerm` | Last visible commit 2025-05-03. Core installer/YAML/directory objects have the same blob/tree SHAs as `BotFabrika`, while README claims a broader complete MVP that is not supported by the inspected repository surface. | `MERGE-CANDIDATE` | Preserve without merging. Treat as a duplicate/superseded agent-factory presentation until unique content is proven. Do not advertise the README's `MVP complete` claim. |
+
+### Agent-lineage conclusion
+
+`BotFabrika` and `BotFerm` are best treated as historical predecessors of the later MindForge/agent-factory direction rather than as separate current products. Their shared repository objects strongly indicate common ancestry/content, but no physical merge or archival action is authorized by this classification alone.
+
 ## Protected / reserved
 
 | Repository / class | Classification | Action |
