@@ -9,8 +9,9 @@ This index is the working truth model for the public portfolio. Statuses are int
 | future KB repositories | Knowledge Engineering | **RESERVED / FUTURE KB** | Leave untouched until knowledge-domain boundaries stabilize |
 | `SecGraph` | Cybersecurity | PRODUCT CONCEPT + IMPLEMENTATION REPO | Verify executable scope, tests and current MVP boundary before labelling MVP |
 | `OSINT_deepseek` | OSINT / Intelligence | ACTIVE DEVELOPMENT | Normalize README, architecture, evidence and demo path without disturbing active work |
-| `MindForge-Studio` | AI / Engineering Factory | ACTIVE PRODUCT REPO | Present as engineering environment in MindForge lineage |
-| `MindForge` | AI / Engineering Factory | ECOSYSTEM / PRODUCT LINE | Preserve as MindForge lineage; PX00 is the advanced autonomous evolution |
+| `MindForge-Studio` | AI / Engineering Factory | **SHOWCASE / PARTIAL PRODUCT IMPLEMENTATION** | Use as current inspectable MindForge product surface; require clean-host/CI evidence for stronger maturity |
+| `MindForge` | AI / Engineering Factory | **ARCHIVE / LINEAGE** | Preserve as historical MindForge lineage; do not use as canonical product surface |
+| `MindForge-v2.0x` | AI / Architecture | **MERGE-CANDIDATE / ARCHITECTURE-SPEC PREDECESSOR** | Preserve unique PRD/architecture/spec material; compare before any migration; current src/core is stub-sized |
 | `META-FOUNDRY` | Meta Engineering | PLATFORM VISION | Connect vision to concrete products and avoid presenting unshipped components as complete |
 | `MVP` | Agent Infrastructure | MVP SPEC / PROTOTYPE | Verify runnable Universal Agent Gateway implementation and choose canonical product identity later |
 | `Librarian-AI` | Knowledge / AI | PROTOTYPE CANDIDATE | Compare with `librarian_ai` only after active/KB reservation checks |
@@ -18,6 +19,14 @@ This index is the working truth model for the public portfolio. Statuses are int
 | `SecureMaze` | Cybersecurity | PLACEHOLDER / EARLY | Do not feature until content exists |
 | `AI_Neural_Networks` | AI Learning / Engineering | STRUCTURED LEARNING TRACK | Supporting engineering evidence, not core flagship |
 | `-DevSecOps-Engineer-Profile` | Historical professional profile | LEGACY PROFILE | Preserve as history; profile landing page is `VictorKVS/VictorKVS` |
+
+## MindForge lineage truth model
+
+Public positioning now uses this evidence-backed sequence:
+
+`MindForge (historical lineage) -> MindForge-v2.0x (architecture/spec predecessor) -> MindForge-Studio (inspectable partial product) -> PX00 (protected advanced autonomous evolution)`
+
+This sequence expresses conceptual evolution, not a physical repository merge and not a claim that every planned capability is shipped. See `docs/AUDITS/MINDFORGE_LINEAGE_EVIDENCE.md`.
 
 ## Protected classes
 
@@ -58,7 +67,7 @@ Until those answers exist, status remains `RESEARCH`, `PROTOTYPE`, `KNOWLEDGE`, 
 2. `KNOWLEDGE_CORE` — evidence-backed knowledge infrastructure
 3. `SecGraph` — security product line after MVP evidence gate
 4. `OSINT_deepseek` — OSINT/intelligence engineering
-5. `MindForge-Studio` — engineering/MVP factory environment
+5. `MindForge-Studio` — current inspectable MindForge engineering/MVP-factory product surface
 6. `devsafe` — developer safety / DevSecOps product candidate after end-to-end proof
 7. canonical Universal Agent implementation after audit
 8. canonical Librarian AI implementation after audit
