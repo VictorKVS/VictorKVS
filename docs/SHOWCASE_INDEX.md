@@ -1,23 +1,45 @@
 # Engineering Showcase Index
 
-This index is a working truth model for the public portfolio. Statuses are intentionally conservative and will be upgraded only after repository-level evidence review.
+This index is the working truth model for the public portfolio. Statuses are intentionally conservative and are upgraded only after repository-level evidence review.
 
-| Repository | Domain | Current presentation status | Next action |
+| Repository / line | Domain | Current presentation status | Normalization action |
 |---|---|---|---|
-| `KNOWLEDGE_CORE` | Knowledge / Security | ACTIVE KNOWLEDGE SYSTEM | Normalize flagship README around evidence, source provenance, CI gates and product outputs |
+| `PX00` | Autonomous Engineering Intelligence | **PROTECTED ACTIVE CORE / ADVANCED MINDFORGE EVOLUTION** | Show architecturally; do not rename, merge, archive, move or restructure |
+| `KNOWLEDGE_CORE` | Knowledge / Security | **ACTIVE KNOWLEDGE SYSTEM / PROTECTED DURING KB BUILD** | Continue evidence-driven population; do not simplify domain structure prematurely |
+| future KB repositories | Knowledge Engineering | **RESERVED / FUTURE KB** | Leave untouched until knowledge-domain boundaries stabilize |
 | `SecGraph` | Cybersecurity | PRODUCT CONCEPT + IMPLEMENTATION REPO | Verify executable scope, tests and current MVP boundary before labelling MVP |
-| `OSINT_deepseek` | OSINT / Intelligence | ACTIVE DEVELOPMENT | Normalize README, architecture, evidence and demo path |
-| `MindForge-Studio` | AI / Engineering Factory | ACTIVE PRODUCT REPO | Verify current runnable features and position relative to MindForge |
-| `MindForge` | AI / Agents | ECOSYSTEM / PRODUCT LINE | Determine canonical role vs MindForge-v2.0x and Studio |
-| `META-FOUNDRY` | Meta Engineering | PLATFORM VISION | Connect to concrete products and avoid presenting vision as shipped implementation |
-| `MVP` | Agent Infrastructure | MVP SPEC / PROTOTYPE | Verify runnable Universal Agent Gateway implementation and choose canonical repo |
-| `Librarian-AI` | Knowledge / AI | PROTOTYPE CANDIDATE | Compare with `librarian_ai`, select canonical repository and preserve history |
+| `OSINT_deepseek` | OSINT / Intelligence | ACTIVE DEVELOPMENT | Normalize README, architecture, evidence and demo path without disturbing active work |
+| `MindForge-Studio` | AI / Engineering Factory | ACTIVE PRODUCT REPO | Present as engineering environment in MindForge lineage |
+| `MindForge` | AI / Engineering Factory | ECOSYSTEM / PRODUCT LINE | Preserve as MindForge lineage; PX00 is the advanced autonomous evolution |
+| `META-FOUNDRY` | Meta Engineering | PLATFORM VISION | Connect vision to concrete products and avoid presenting unshipped components as complete |
+| `MVP` | Agent Infrastructure | MVP SPEC / PROTOTYPE | Verify runnable Universal Agent Gateway implementation and choose canonical product identity later |
+| `Librarian-AI` | Knowledge / AI | PROTOTYPE CANDIDATE | Compare with `librarian_ai` only after active/KB reservation checks |
 | `devsafe` | Cybersecurity / DevSecOps | PROTOTYPE CANDIDATE | Inspect implementation and evidence |
 | `SecureMaze` | Cybersecurity | PLACEHOLDER / EARLY | Do not feature until content exists |
-| `AI_Neural_Networks` | AI Learning / Engineering | STRUCTURED LEARNING TRACK | Keep as supporting engineering evidence, not core flagship |
-| `-DevSecOps-Engineer-Profile` | Historical professional profile | LEGACY PROFILE | Preserve as history; profile landing page now lives in `VictorKVS/VictorKVS` |
+| `AI_Neural_Networks` | AI Learning / Engineering | STRUCTURED LEARNING TRACK | Supporting engineering evidence, not core flagship |
+| `-DevSecOps-Engineer-Profile` | Historical professional profile | LEGACY PROFILE | Preserve as history; profile landing page is `VictorKVS/VictorKVS` |
 
-## Portfolio policy
+## Protected classes
+
+### `PROTECTED / ACTIVE CORE`
+Repository is architecturally visible but excluded from cleanup mutations. Current member: `PX00`.
+
+### `RESERVED / FUTURE KB`
+Potential knowledge-base repositories are excluded from cleanup, merging and renaming while the multi-domain knowledge corpus is being built. They will be placed later when their final domain ownership is known.
+
+### Recent active work
+Repositories changed during the active window are not cleanup targets. Inactivity is only a filter for review; it does not authorize destructive changes.
+
+## Candidate processing for older repositories
+
+An older, non-protected, non-KB repository is reviewed and assigned exactly one working disposition:
+
+- `SHOWCASE` — deserves product-facing normalization;
+- `LEARNING` — useful learning history, moved out of the visual foreground;
+- `ARCHIVE` — historical project retained for provenance;
+- `MERGE-CANDIDATE` — probable duplicate/superseded line; no merge until canonical content is verified.
+
+## Portfolio truth gate
 
 A repository enters **Featured Engineering** only when the profile can truthfully answer:
 
@@ -25,21 +47,21 @@ A repository enters **Featured Engineering** only when the profile can truthfull
 - What works today?
 - How can someone reproduce or inspect it?
 - What is the architecture?
-- What evidence exists (tests, CI, benchmarks, source provenance, demo)?
+- What evidence exists: tests, CI, benchmarks, source provenance or demo?
 - What does *not* work yet?
 
-Until those answers exist, status remains `RESEARCH`, `PROTOTYPE`, `KNOWLEDGE`, `LEARNING`, or `PLACEHOLDER` rather than `MVP`.
+Until those answers exist, status remains `RESEARCH`, `PROTOTYPE`, `KNOWLEDGE`, `LEARNING`, `PLACEHOLDER` or another conservative label rather than `MVP`.
 
-## Initial flagship candidate set
+## Target showcase structure
 
-Target public showcase after verification:
+1. `PX00` — protected advanced MindForge evolution / autonomous engineering intelligence
+2. `KNOWLEDGE_CORE` — evidence-backed knowledge infrastructure
+3. `SecGraph` — security product line after MVP evidence gate
+4. `OSINT_deepseek` — OSINT/intelligence engineering
+5. `MindForge-Studio` — engineering/MVP factory environment
+6. canonical Universal Agent implementation after audit
+7. canonical Librarian AI implementation after audit
+8. `META-FOUNDRY` — ecosystem/meta-engineering layer
+9. future verified MVP products generated by the ecosystem
 
-1. `KNOWLEDGE_CORE`
-2. `SecGraph`
-3. `OSINT_deepseek`
-4. `MindForge-Studio` or canonical MindForge successor
-5. canonical Universal Agent implementation
-6. canonical Librarian AI implementation
-7. `META-FOUNDRY` as ecosystem/architecture layer
-
-This list is provisional until repository-level audits are completed.
+The showcase will expand as the knowledge bases and MVP products mature; it is not frozen to today's repository boundaries.
