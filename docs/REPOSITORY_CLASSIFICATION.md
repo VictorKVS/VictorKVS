@@ -18,6 +18,25 @@ This register drives portfolio normalization. It is intentionally non-destructiv
 | `Flask` | Description identifies Seminar 1 / introduction to Flask; old repository line | `LEARNING` | Preserve as learning history |
 | `Pyton` | Description explicitly says `ДЗ GB`; last push 2024-03-19 | `LEARNING` | Preserve; candidate for later learning-index grouping |
 
+## Backend learning track
+
+The numbered `DZ` repositories are a curriculum progression, not separate products. The stronger later exercises remain useful supporting engineering evidence while staying classified as `LEARNING`.
+
+| Repository range | Verified direction | Classification | Action |
+|---|---|---|---|
+| `dz14_html_css_resume` → `DZ19_Getting_Started_with_Models` | HTML/CSS and Django foundations: views, templates, forms and models | `LEARNING` | Group into Engineering Journey |
+| `DZ20_Queries_in_Django_ORM` → `DZ_25_Django_web_api` | ORM, CRUD, filtering/sorting and REST/API progression; `DZ_23_I_REST_API` explicitly identifies itself as lesson 23 and course work while showing JWT/RBAC/DRF practice | `LEARNING` | Keep as supporting backend/security evidence, not flagship products |
+| `DZ_26_PostgreSQL_PG4` → `DZ_30_SQLAlchemy` | PostgreSQL, SQLAlchemy and FastAPI progression | `LEARNING` | Keep as supporting data/backend evidence |
+| `DZ_31_Basic_linux_Commands` → `DZ_36_Web_Socket` | Linux, Nginx, Docker, Gunicorn/WSGI/ASGI and WebSocket progression; last visible work in this segment is 2026-07-26 | `LEARNING` | Keep as supporting deployment/runtime evidence |
+
+### Learning-track conclusion
+
+Public presentation should collapse these repositories into one trajectory rather than present 20+ separate product cards:
+
+`HTML/CSS → Django → ORM/CRUD/API → JWT/RBAC → PostgreSQL/SQLAlchemy → FastAPI → Linux/Nginx/Docker → Gunicorn/ASGI → WebSocket`
+
+No course repository is promoted to MVP solely because its README uses product or enterprise language.
+
 ## Product/spec/profile review
 
 | Repository | Evidence | Classification | Action |
