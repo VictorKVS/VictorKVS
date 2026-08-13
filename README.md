@@ -15,8 +15,11 @@ I design secure, knowledge-driven software and AI systems with an emphasis on ex
 
 The repositories below are the current flagship candidates. Maturity labels are intentionally conservative and are upgraded only after repository-level evidence review.
 
+### 🧠 PX00 — **PROTECTED ACTIVE CORE / ADVANCED MINDFORGE EVOLUTION**
+Autonomous Engineering Intelligence direction: an advanced evolution of the MindForge concept combining orchestration, planning, expert agents, critics and verification, progress metrics, project lifecycle control and evidence-backed knowledge. PX00 is intentionally **not restructured, renamed, merged or moved** while active development continues; the portfolio only describes its architectural role.
+
 ### 📚 [KNOWLEDGE_CORE](https://github.com/VictorKVS/KNOWLEDGE_CORE) — **ACTIVE KNOWLEDGE SYSTEM**
-Evidence-driven knowledge infrastructure for engineering and security. Current work includes source provenance, atomic requirement verification, CI proof floors, cross-domain security knowledge and adversarial completeness checks.
+Evidence-driven knowledge infrastructure for engineering and security. Current work includes source provenance, atomic requirement verification, CI proof floors, cross-domain security knowledge and adversarial completeness checks. Additional knowledge domains are expected to grow for the next development phase and are therefore protected from premature cleanup or consolidation.
 
 ### 🛡 [SecGraph](https://github.com/VictorKVS/SecGraph) — **PRODUCT / MVP CANDIDATE**
 Knowledge-driven security audit, intelligence and pentest platform. The portfolio audit is verifying the exact runnable MVP boundary before promoting the maturity label.
@@ -25,7 +28,7 @@ Knowledge-driven security audit, intelligence and pentest platform. The portfoli
 OSINT engineering project focused on structured analyst workflows, automation, evidence and reproducible decision lineage.
 
 ### 🧠 [MindForge Studio](https://github.com/VictorKVS/MindForge-Studio) — **ACTIVE PRODUCT REPO**
-Engineering environment for the MindForge ecosystem. Its relationship to the older MindForge repositories is being normalized into one canonical product line.
+Engineering environment for the MindForge ecosystem. MindForge represents the engineering/MVP-factory lineage; PX00 is positioned above it as the advanced autonomous engineering-intelligence evolution rather than as a replacement to be merged during portfolio cleanup.
 
 ### 🤖 [MVP / Universal Agent](https://github.com/VictorKVS/MVP) — **PROTOTYPE / MVP SPEC**
 Universal Agent Gateway direction: a minimal controlled gateway for AI-agent actions with policy/decision logic, provider integration, security boundaries and audit logs. Runnable evidence is being verified before a stronger maturity claim.
@@ -37,50 +40,50 @@ Meta-engineering layer connecting AI, security, knowledge systems and system arc
 
 ---
 
-## Engineering domains
-
-| 🛡 Security Architecture | 🧠 AI Systems & Agents | ⚙️ Software Engineering | 📚 Knowledge Engineering |
-|---|---|---|---|
-| Security architecture | MindForge | Python | Engineering knowledge |
-| Threat modeling | Agent systems | Go | Security knowledge |
-| DevSecOps | RAG / MCP | C++ | Product knowledge |
-| OSINT | Knowledge graphs | Backend / Web | Research & evidence |
-| Security automation | AI research | Databases / Linux | ADR / benchmarks |
-
----
-
 ## Ecosystem architecture
 
 ```mermaid
 flowchart TD
-    VK[Viktor Kulichenko] --> SEC[Security Architecture]
-    VK --> AI[AI Systems]
-    VK --> ENG[Software Engineering]
-    VK --> KB[Knowledge Engineering]
+    VK[Viktor Kulichenko] --> MF[MindForge Engineering / MVP Factory]
+    MF --> PX[PX00 — Autonomous Engineering Intelligence]
 
-    SEC --> SG[SecGraph]
-    SEC --> OSINT[OSINT]
-    SEC --> DEVSAFE[DevSecOps / DevSafe]
-
-    AI --> MF[MindForge]
-    AI --> MFS[MindForge Studio]
-    AI --> UAG[Universal Agent Gateway]
-
-    ENG --> PY[Python]
-    ENG --> GO[Go]
-    ENG --> CPP[C++]
-    ENG --> WEB[Web Engineering]
+    PX --> ORCH[Orchestration & Planning]
+    PX --> EXP[Expert Agents]
+    PX --> CRIT[Critics / Verification]
+    PX --> MET[Metrics & Project Lifecycle]
+    PX --> KB[Evidence-backed Knowledge Layer]
 
     KB --> KC[KNOWLEDGE_CORE]
     KC --> SKB[Security Knowledge]
-    KC --> EKB[Engineering Knowledge]
+    KC --> FKB[Future Knowledge Domains]
+
+    PX --> PRODUCTS[Products / MVP]
+    PRODUCTS --> SG[SecGraph]
+    PRODUCTS --> OSINT[OSINT]
+    PRODUCTS --> UAG[Universal Agent Gateway]
+    PRODUCTS --> LIB[Librarian AI]
+
+    VK --> SEC[Security Architecture]
+    VK --> ENG[Software Engineering]
+    VK --> META[META-FOUNDRY / Meta Engineering]
 
     SKB -. evidence .-> SG
-    EKB -. evidence .-> AI
-    KC -. provenance .-> UAG
+    KB -. provenance .-> PX
 ```
 
 [Explore the full ecosystem architecture →](docs/ECOSYSTEM.md)
+
+---
+
+## Engineering domains
+
+| 🛡 Security Architecture | 🧠 AI Systems & Agents | ⚙️ Software Engineering | 📚 Knowledge Engineering |
+|---|---|---|---|
+| Security architecture | MindForge / PX00 | Python | Engineering knowledge |
+| Threat modeling | Agent systems | Go | Security knowledge |
+| DevSecOps | RAG / MCP | C++ | Product knowledge |
+| OSINT | Knowledge graphs | Backend / Web | Research & evidence |
+| Security automation | AI research | Databases / Linux | ADR / benchmarks |
 
 ---
 
@@ -96,39 +99,23 @@ The portfolio is being normalized around the same principle. A project will not 
 
 Knowledge bases in this ecosystem connect official documentation, standards, research, implementation evidence and reproducible experiments to engineering decisions. Both people and agents should be able to answer not only **what** was chosen, but **why**.
 
-## Engineering languages
-
-**Python** — AI, orchestration, backend, automation and data.  
-**Go** — concurrent services, networking, infrastructure and security tooling.  
-**C++** — algorithms, systems engineering, performance and native components.
-
-The language is selected from the constraints of the problem rather than preference alone.
-
 ---
 
-## Portfolio normalization in progress
+## Portfolio normalization policy
 
-The GitHub account contains both current products and a substantial learning history. The transformation keeps that history but separates it from the flagship product layer.
+The GitHub account contains current products, active knowledge-building work and a substantial learning history. The transformation keeps all three but separates their public roles.
 
-Current normalization work:
+Current rules:
 
-- classify repositories as `FLAGSHIP / MVP / PROTOTYPE / RESEARCH / KNOWLEDGE / LEARNING ARCHIVE`;
-- resolve duplicate/superseded product identities;
-- normalize flagship README contracts;
-- add architecture, quick-start, limitations, tests/CI and evidence;
-- move old coursework out of the visual foreground without deleting the learning history;
-- expose both human-readable and agent-readable navigation.
+- `PX00` is `PROTECTED / ACTIVE CORE / SHOWCASE`: describe and link architecturally, but do not restructure it;
+- active and future knowledge-base repositories are `RESERVED / FUTURE KB` and are not cleaned up while the knowledge corpus is still being built;
+- repositories with recent active work are left in place;
+- older repositories are classified before any move as `SHOWCASE / LEARNING / ARCHIVE / MERGE`;
+- no destructive cleanup is performed merely for visual neatness;
+- flagship README contracts expose problem, current capability, architecture, evidence, limitations and roadmap;
+- human-readable navigation is paired with agent-readable `.ai/` metadata.
 
 [Read the full transformation plan →](docs/PORTFOLIO_TRANSFORMATION_PLAN.md)
-
----
-
-### Repository navigation standard
-
-Every flagship repository will progressively expose two complementary interfaces:
-
-**For people:** concise product statement · problem · current capabilities · architecture · demo · limitations · evidence · roadmap.  
-**For agents:** `.ai/manifest.yaml` · relationships · capabilities · evidence references · decision records.
 
 ---
 
