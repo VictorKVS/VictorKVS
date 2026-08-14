@@ -33,28 +33,11 @@ architecture:
       role: autonomous-engineering-intelligence
       status: protected-active-core
       mutation_policy: do-not-rename-merge-archive-move-or-restructure
-      capabilities_direction:
-        - orchestration
-        - planning
-        - expert-agents
-        - critics-and-verification
-        - progress-metrics
-        - project-lifecycle
-        - evidence-backed-knowledge
   knowledge_layer:
     root: KNOWLEDGE_CORE
     related_active_repository: KNOWLEDGE_MASTER
     status: active-expansion
     mutation_policy: preserve-during-kb-build
-    expected_domains:
-      - security
-      - osint
-      - programming
-      - architecture
-      - devsecops
-      - product
-      - research
-      - ai-agents
   product_layer:
     showcase:
       OSINT_deepseek:
@@ -106,49 +89,9 @@ site:
   truth_policy: roadmap-is-not-shipped-functionality
   publication_gate: github-pages-setting-and-live-url-not-confirmed
 
-domains:
-  security:
-    projects:
-      - SecGraph
-      - devsafe
-    topics:
-      - security-architecture
-      - devsecops
-      - osint
-      - threat-modeling
-  ai:
-    projects:
-      - MindForge-Studio
-      - PX00
-      - Sokrat
-      - AI_Neural_Networks
-    topics:
-      - agents
-      - rag
-      - mcp
-      - knowledge-graphs
-      - iterative-research
-  engineering:
-    languages:
-      - python
-      - go
-      - cpp
-    topics:
-      - backend
-      - web
-      - databases
-      - linux
-      - containers
-  knowledge:
-    active_repositories:
-      - KNOWLEDGE_CORE
-      - KNOWLEDGE_MASTER
-    reservation_policy: future-kb-candidates-must-not-be-cleaned-up-until-domain-placement-is-known
-
 protected_repositories:
   PX00:
     policy: do-not-rename-merge-archive-move-or-restructure
-    public_role: advanced-mindforge-evolution
   OSINT_deepseek_poc:
     policy: preserve-while-active
   KNOWLEDGE_CORE:
@@ -159,7 +102,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_13.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_14.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
