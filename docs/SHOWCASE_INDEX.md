@@ -7,19 +7,19 @@ This index is the working truth model for the public portfolio. Statuses are int
 | `PX00` | Autonomous Engineering Intelligence | **PROTECTED ACTIVE CORE / ADVANCED MINDFORGE EVOLUTION** | Show architecturally; do not rename, merge, archive, move or restructure |
 | `KNOWLEDGE_CORE` | Knowledge / Security | **ACTIVE KNOWLEDGE SYSTEM / PROTECTED DURING KB BUILD** | Continue evidence-driven population; do not simplify domain structure prematurely |
 | future KB repositories | Knowledge Engineering | **RESERVED / FUTURE KB** | Leave untouched until knowledge-domain boundaries stabilize |
-| `SecGraph` | Cybersecurity | PRODUCT CONCEPT + IMPLEMENTATION REPO | Verify executable scope, tests and current MVP boundary before labelling MVP |
+| `SecGraph` | Cybersecurity | **PRODUCT CONCEPT / IMPLEMENTATION INCOMPLETE** | Product architecture and KB specifications are inspectable; require a reproducible runnable MVP boundary before MVP promotion |
 | `OSINT_deepseek` | OSINT / Intelligence | **SHOWCASE / VERIFIED DEV BASELINE / ACTIVE DEVELOPMENT** | Preserve active repo; public evidence page records Python 3.12 clean-checkout baseline, 21 PASS tests, verified DEV runners and production gates |
 | `MindForge-Studio` | AI / Engineering Factory | **SHOWCASE / PARTIAL PRODUCT IMPLEMENTATION** | Current inspectable MindForge product surface; publish-ready evidence page exists; require clean-host/CI evidence for stronger maturity |
 | `Sokrat` | AI / Research Orchestration | **SHOWCASE / RESEARCH PROTOTYPE** | README normalized; concrete research engine, local knowledge support and unit/integration test structure verified; historical 13/13 integration checkpoint preserved but fresh clean-host verification remains required |
 | `MindForge` | AI / Engineering Factory | **ARCHIVE / LINEAGE** | Preserve as historical MindForge lineage; do not use as canonical product surface |
 | `MindForge-v2.0x` | AI / Architecture | **MERGE-CANDIDATE / ARCHITECTURE-SPEC PREDECESSOR** | Preserve unique PRD/architecture/spec material; compare before any migration; current src/core is stub-sized |
-| `META-FOUNDRY` | Meta Engineering | PLATFORM VISION | Connect vision to concrete products and avoid presenting unshipped components as complete |
-| `MVP` | Agent Infrastructure | MVP SPEC / PROTOTYPE | Verify runnable Universal Agent Gateway implementation and choose canonical product identity later |
-| `Librarian-AI` | Knowledge / AI | PROTOTYPE CANDIDATE | Compare with `librarian_ai` only after active/KB reservation checks |
+| `META-FOUNDRY` | Meta Engineering | **PLATFORM / ARCHITECTURE VISION** | Connect vision to concrete products and avoid presenting unshipped components as complete |
+| `MVP` | Agent Infrastructure | **PROTOTYPE / PARTIAL IMPLEMENTATION** | Public identity is Universal Agent; routing/auth/provider evidence exists, but end-to-end reproducibility remains incomplete |
+| `Librarian-AI` | Knowledge / AI | **SHOWCASE CANDIDATE / EVIDENCE-GATED** | Document-to-knowledge implementation evidence exists; require reproducible execution and current test proof before stronger maturity |
 | `devsafe` | Cybersecurity / DevSecOps | **SHOWCASE CANDIDATE / PARTIAL IMPLEMENTATION** | Concrete core modules and test assets verified; require clean-host end-to-end proof before MVP promotion |
-| `SecureMaze` | Cybersecurity | PLACEHOLDER / EARLY | Do not feature until content exists |
-| `AI_Neural_Networks` | AI Learning / Engineering | STRUCTURED LEARNING TRACK | Supporting engineering evidence, not core flagship |
-| `-DevSecOps-Engineer-Profile` | Historical professional profile | LEGACY PROFILE | Preserve as history; profile landing page is `VictorKVS/VictorKVS` |
+| `SecureMaze` | Cybersecurity | **ARCHIVE / EMPTY PLACEHOLDER** | Batch 11 confirmed size 0 and no commit history; preserve naming provenance only and exclude from implementation evidence |
+| `AI_Neural_Networks` | AI Learning / Engineering | **STRUCTURED LEARNING TRACK** | Supporting engineering evidence, not core flagship |
+| `-DevSecOps-Engineer-Profile` | Historical professional profile | **ARCHIVE / PROFESSIONAL LINEAGE** | Preserve as history; canonical profile landing page is `VictorKVS/VictorKVS` |
 
 ## MindForge lineage truth model
 
