@@ -80,6 +80,10 @@ architecture:
       Librarian-AI:
         status: prototype-candidate
         evidence_page: products/librarian.html
+      Sokrat:
+        status: showcase-research-prototype
+        evidence_page: products/sokrat.html
+        promotion_gate: fresh-clean-host-and-current-test-proof
       META-FOUNDRY:
         status: platform-vision
         evidence_page: products/meta-foundry.html
@@ -115,12 +119,14 @@ domains:
     projects:
       - MindForge-Studio
       - PX00
+      - Sokrat
       - AI_Neural_Networks
     topics:
       - agents
       - rag
       - mcp
       - knowledge-graphs
+      - iterative-research
   engineering:
     languages:
       - python
@@ -152,6 +158,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_11.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
