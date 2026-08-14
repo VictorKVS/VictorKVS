@@ -84,10 +84,11 @@ They are predecessors/supporting branches of the later MindForge/PX00 direction,
 | `NAM` | Last visible commit 2025-12-06. Current repository contains a minimal README, `NAM_shema.md`, architecture docs and API specification. The schema describes a much larger intended `src/`, `kb/`, security and policy tree than is actually present in the inspected repository surface. | `ARCHIVE` | Preserve as architecture/specification lineage. Do not present the proposed tree as implemented functionality. |
 | `AURORA-Intelligence-Platform-` | Repository is currently empty; no inspectable files or implementation evidence. | `ARCHIVE` | Preserve as historical naming/product-direction placeholder; exclude from product foreground. |
 | `H-Mindforge-industrial-ai-suite` | Repository is currently empty; no inspectable files or implementation evidence. | `ARCHIVE` | Preserve as historical MindForge product-direction placeholder; do not use as evidence for current MindForge/PX00 capability. |
+| `MindForge-Factory-Website` | Last visible commits are 2026-01-23. Repository contains a legacy GitHub Pages/Jekyll-style site and documentation that calls itself the official MindForge Factory showcase and lists broad factory capabilities/projects, while the same document leaves implementation choices and multiple product lines as planned/in-progress. | `ARCHIVE` | Preserve as historical website/product-positioning lineage. Canonical public truth surface is now `VictorKVS/VictorKVS`; do not treat legacy website claims as shipped capability evidence. |
 
 ### Architecture-lineage conclusion
 
-These repositories are useful as provenance for the evolution of the engineering-intelligence architecture, but they are not current products. Public maturity remains tied to inspectable implementation and reproducible evidence rather than repository names or proposed directory structures.
+These repositories are useful as provenance for the evolution of the engineering-intelligence architecture, but they are not current products. Public maturity remains tied to inspectable implementation and reproducible evidence rather than repository names, historical websites or proposed directory structures.
 
 ## Protected / reserved
 
