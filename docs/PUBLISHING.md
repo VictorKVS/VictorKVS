@@ -12,13 +12,21 @@ The portfolio repository already contains the static public surface:
 - `404.html`
 - `.nojekyll`
 
-A dedicated deployment workflow now exists at `.github/workflows/pages.yml`. It assembles only the public HTML surface into `_site`, uploads it with `actions/upload-pages-artifact`, and deploys it with `actions/deploy-pages`.
+A dedicated deployment workflow exists at `.github/workflows/pages.yml`. It assembles only the public HTML surface into `_site`, uploads it with `actions/upload-pages-artifact`, and deploys it with `actions/deploy-pages`.
 
 ## Truth constraint
 
 A live GitHub Pages URL must **not** be advertised until GitHub confirms that Pages is enabled for this repository and a deployment succeeds.
 
-At the latest verification pass, `GET /repos/VictorKVS/VictorKVS/pages` still returned `404 Not Found`. The Actions runs endpoint also returned no recorded runs. This is treated as an infrastructure/publication blocker, not as evidence that the static site content is incomplete.
+## Verified blocker — 2026-08-14
+
+Two deployment attempts were executed. The second run used `actions/configure-pages@v5` with `enablement: true`, but GitHub rejected creation of the Pages site with:
+
+`Resource not accessible by integration`
+
+The workflow token had `Pages: write`, but the integration is still not permitted to perform the one-time repository-level Pages enablement. This proves that the remaining blocker is repository configuration/authorization, not the static site content.
+
+To avoid creating a red Actions run on every site-content push while this setting is missing, the Pages workflow is now intentionally **manual-only** (`workflow_dispatch`). Automatic `enablement: true` has been removed. Once Pages is enabled in repository settings, the same workflow can be run manually and should proceed through Configure Pages → artifact build → deploy.
 
 ## Intended publication source
 
@@ -31,15 +39,21 @@ At the latest verification pass, `GET /repos/VictorKVS/VictorKVS/pages` still re
 
 The workflow intentionally publishes only the public site files and `products/`; internal portfolio audit documents under `docs/` are not copied into the Pages artifact.
 
-## One-time repository setting still required
+## One-time repository setting required
 
-GitHub's official Pages documentation requires custom GitHub Actions workflows to be enabled as the Pages publishing source for the repository. The current connector can write the workflow but cannot change that repository setting.
+In GitHub UI open:
 
-Required one-time setting in GitHub UI:
+`VictorKVS/VictorKVS → Settings → Pages → Build and deployment → Source: GitHub Actions`
 
-`Repository → Settings → Pages → Build and deployment → Source: GitHub Actions`
+This is the only repository-level action that the current GitHub integration cannot perform on its own.
 
-After that setting is enabled, the prepared workflow can be run manually or triggered by a qualifying push to `main`.
+After that setting is enabled:
+
+1. Open `Actions` in `VictorKVS/VictorKVS`.
+2. Select `Deploy engineering showcase to GitHub Pages`.
+3. Run the workflow on `main`.
+4. Confirm the build and deploy jobs are green.
+5. Record the concrete Pages URL returned by GitHub.
 
 ## Publication acceptance gate
 
