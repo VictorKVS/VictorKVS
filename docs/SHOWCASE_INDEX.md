@@ -8,8 +8,8 @@ This index is the working truth model for the public portfolio. Statuses are int
 | `KNOWLEDGE_CORE` | Knowledge / Security | **ACTIVE KNOWLEDGE SYSTEM / PROTECTED DURING KB BUILD** | Continue evidence-driven population; do not simplify domain structure prematurely |
 | future KB repositories | Knowledge Engineering | **RESERVED / FUTURE KB** | Leave untouched until knowledge-domain boundaries stabilize |
 | `SecGraph` | Cybersecurity | PRODUCT CONCEPT + IMPLEMENTATION REPO | Verify executable scope, tests and current MVP boundary before labelling MVP |
-| `OSINT_deepseek` | OSINT / Intelligence | ACTIVE DEVELOPMENT | Normalize README, architecture, evidence and demo path without disturbing active work |
-| `MindForge-Studio` | AI / Engineering Factory | **SHOWCASE / PARTIAL PRODUCT IMPLEMENTATION** | Use as current inspectable MindForge product surface; require clean-host/CI evidence for stronger maturity |
+| `OSINT_deepseek` | OSINT / Intelligence | **SHOWCASE / VERIFIED DEV BASELINE / ACTIVE DEVELOPMENT** | Preserve active repo; public evidence page records Python 3.12 clean-checkout baseline, 21 PASS tests, verified DEV runners and production gates |
+| `MindForge-Studio` | AI / Engineering Factory | **SHOWCASE / PARTIAL PRODUCT IMPLEMENTATION** | Current inspectable MindForge product surface; publish-ready evidence page exists; require clean-host/CI evidence for stronger maturity |
 | `MindForge` | AI / Engineering Factory | **ARCHIVE / LINEAGE** | Preserve as historical MindForge lineage; do not use as canonical product surface |
 | `MindForge-v2.0x` | AI / Architecture | **MERGE-CANDIDATE / ARCHITECTURE-SPEC PREDECESSOR** | Preserve unique PRD/architecture/spec material; compare before any migration; current src/core is stub-sized |
 | `META-FOUNDRY` | Meta Engineering | PLATFORM VISION | Connect vision to concrete products and avoid presenting unshipped components as complete |
@@ -65,8 +65,8 @@ Until those answers exist, status remains `RESEARCH`, `PROTOTYPE`, `KNOWLEDGE`, 
 
 1. `PX00` — protected advanced MindForge evolution / autonomous engineering intelligence
 2. `KNOWLEDGE_CORE` — evidence-backed knowledge infrastructure
-3. `SecGraph` — security product line after MVP evidence gate
-4. `OSINT_deepseek` — OSINT/intelligence engineering
+3. `OSINT_deepseek` — verified DEV baseline / active OSINT engineering
+4. `SecGraph` — security product line after MVP evidence gate
 5. `MindForge-Studio` — current inspectable MindForge engineering/MVP-factory product surface
 6. `devsafe` — developer safety / DevSecOps product candidate after end-to-end proof
 7. canonical Universal Agent implementation after audit
