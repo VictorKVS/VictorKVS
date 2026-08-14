@@ -1,4 +1,4 @@
-schema_version: "1.3"
+schema_version: "1.4"
 id: victorkvs-engineering-portfolio
 name: Viktor Kulichenko Engineering Portfolio
 type: portfolio-root
@@ -71,6 +71,16 @@ architecture:
       META-FOUNDRY:
         status: platform-architecture-vision
         evidence_page: products/meta-foundry.html
+  mvp_lab:
+    status: active-read-only-inventory
+    page: products/mvp-lab.html
+    inventory: docs/VIBE_MVP_LAB_INVENTORY.md
+    source_repository: Vibe-coding
+    source_policy: recent-active-work-do-not-move-merge-archive-or-normalize-in-place
+    first_candidate:
+      public_name: AI Meeting Secretary
+      status: mvp-candidate-active-source
+      promotion_gate: independent-clean-run-tests-security-and-privacy-review
 
 lineage_pages:
   mindforge: products/mindforge-lineage.html
@@ -82,6 +92,7 @@ site:
   entrypoint: index.html
   architecture: architecture.html
   products: products/index.html
+  mvp_lab: products/mvp-lab.html
   journey: journey.html
   status_page: status.html
   error_page: 404.html
@@ -98,16 +109,19 @@ protected_repositories:
     policy: preserve-during-active-kb-build
   KNOWLEDGE_MASTER:
     policy: preserve-during-active-kb-build
+  Vibe-coding:
+    policy: preserve-while-recent-active-work
 
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_14.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_15.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
     - reserved-future-kb
     - active-project-dependency
+    - recent-active-work
   dispositions:
     - SHOWCASE
     - LEARNING
@@ -119,6 +133,7 @@ navigation:
   github_profile: https://github.com/VictorKVS
   repository: https://github.com/VictorKVS/VictorKVS
   status: status.html
+  mvp_lab: products/mvp-lab.html
   showcase_truth: docs/SHOWCASE_INDEX.md
   ecosystem_docs: docs/ECOSYSTEM.md
   repository_classification: docs/REPOSITORY_CLASSIFICATION.md
