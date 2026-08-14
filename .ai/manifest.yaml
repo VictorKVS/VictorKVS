@@ -78,14 +78,15 @@ architecture:
         status: prototype-partial-implementation
         evidence_page: products/universal-agent.html
       Librarian-AI:
-        status: prototype-candidate
+        status: showcase-candidate-evidence-gated
         evidence_page: products/librarian.html
+        promotion_gate: reproducible-execution-and-current-test-proof
       Sokrat:
         status: showcase-research-prototype
         evidence_page: products/sokrat.html
         promotion_gate: fresh-clean-host-and-current-test-proof
       META-FOUNDRY:
-        status: platform-vision
+        status: platform-architecture-vision
         evidence_page: products/meta-foundry.html
 
 lineage_pages:
@@ -158,7 +159,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_12.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_13.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
