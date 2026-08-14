@@ -6,37 +6,43 @@
 
 I design secure, knowledge-driven software and AI systems with an emphasis on explainable engineering decisions, reproducible experiments, evidence-backed architecture and security by design.
 
-**Portfolio status:** active transformation into an evidence-backed MVP showcase  
-**Architecture:** [Ecosystem map](docs/ECOSYSTEM.md) · **Showcase index:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Transformation plan:** [Portfolio plan](docs/PORTFOLIO_TRANSFORMATION_PLAN.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
+**Portfolio status:** evidence-backed engineering showcase in active refinement  
+**Website source:** [Engineering Intelligence](index.html) · **Architecture:** [Ecosystem map](architecture.html) · **Products:** [Product hub](products/index.html) · **Showcase truth model:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
 
 ---
 
 ## Featured engineering
 
-The repositories below are the current flagship candidates. Maturity labels are intentionally conservative and are upgraded only after repository-level evidence review.
+Maturity labels are intentionally conservative. A roadmap, specification or README claim is not treated as shipped functionality without implementation and reproduction evidence.
 
 ### 🧠 PX00 — **PROTECTED ACTIVE CORE / ADVANCED MINDFORGE EVOLUTION**
-Autonomous Engineering Intelligence direction: an advanced evolution of the MindForge concept combining orchestration, planning, expert agents, critics and verification, progress metrics, project lifecycle control and evidence-backed knowledge. PX00 is intentionally **not restructured, renamed, merged or moved** while active development continues; the portfolio only describes its architectural role.
+Autonomous Engineering Intelligence direction: an advanced evolution of the MindForge concept combining orchestration, planning, expert agents, critics and verification, progress metrics, project lifecycle control and evidence-backed knowledge. PX00 is intentionally **not restructured, renamed, merged or moved** during portfolio normalization; the portfolio describes only its architectural role.
 
 ### 📚 [KNOWLEDGE_CORE](https://github.com/VictorKVS/KNOWLEDGE_CORE) — **ACTIVE KNOWLEDGE SYSTEM**
-Evidence-driven knowledge infrastructure for engineering and security. Current work includes source provenance, atomic requirement verification, CI proof floors, cross-domain security knowledge and adversarial completeness checks. Additional knowledge domains are expected to grow for the next development phase and are therefore protected from premature cleanup or consolidation.
+Evidence-driven knowledge infrastructure for provenance, requirements, professional knowledge and security knowledge. Active and future knowledge-base domains remain protected from premature consolidation while their boundaries are still being established.
 
-### 🛡 [SecGraph](https://github.com/VictorKVS/SecGraph) — **PRODUCT / MVP CANDIDATE**
-Knowledge-driven security audit, intelligence and pentest platform. The portfolio audit is verifying the exact runnable MVP boundary before promoting the maturity label.
+### 🔎 [OSINT_deepseek](https://github.com/VictorKVS/OSINT_deepseek) — **SHOWCASE / VERIFIED DEV BASELINE / ACTIVE DEVELOPMENT**
+Structured OSINT analyst workflows with automation, provenance and reproducible decision lineage. The current public evidence records a Python 3.12 clean-checkout DEV baseline, 21 passing automated tests and verified DEV runners; production capabilities remain separately gated. [Evidence page →](products/osint-deepseek.html)
 
-### 🔎 [OSINT_deepseek](https://github.com/VictorKVS/OSINT_deepseek) — **ACTIVE DEVELOPMENT**
-OSINT engineering project focused on structured analyst workflows, automation, evidence and reproducible decision lineage.
+### 🛡 [SecGraph](https://github.com/VictorKVS/SecGraph) — **PRODUCT CONCEPT / IMPLEMENTATION INCOMPLETE**
+Knowledge-driven security audit and intelligence product line. Current repository evidence supports a product concept and knowledge specifications, but not yet a reproducibly runnable MVP. [Evidence page →](products/secgraph.html)
 
-### 🧠 [MindForge Studio](https://github.com/VictorKVS/MindForge-Studio) — **ACTIVE PRODUCT REPO**
-Engineering environment for the MindForge ecosystem. MindForge represents the engineering/MVP-factory lineage; PX00 is positioned above it as the advanced autonomous engineering-intelligence evolution rather than as a replacement to be merged during portfolio cleanup.
+### 🧠 [MindForge Studio](https://github.com/VictorKVS/MindForge-Studio) — **SHOWCASE / PARTIAL PRODUCT IMPLEMENTATION**
+Current inspectable implementation surface in the MindForge lineage, with concrete code and test assets. Stronger maturity remains gated on clean-host and CI evidence. [Evidence page →](products/mindforge-studio.html)
 
-### 🤖 [MVP / Universal Agent](https://github.com/VictorKVS/MVP) — **PROTOTYPE / MVP SPEC**
-Universal Agent Gateway direction: a minimal controlled gateway for AI-agent actions with policy/decision logic, provider integration, security boundaries and audit logs. Runnable evidence is being verified before a stronger maturity claim.
+### 🤖 [MVP / Universal Agent](https://github.com/VictorKVS/MVP) — **PROTOTYPE / PARTIAL IMPLEMENTATION**
+Controlled AI-agent gateway direction with implementation evidence for routing, JWT/RBAC, SQL provider integration and observability. The current branch is not yet reproducibly runnable end-to-end. [Evidence page →](products/universal-agent.html)
 
-### 🏭 [META-FOUNDRY](https://github.com/VictorKVS/META-FOUNDRY) — **PLATFORM VISION**
-Meta-engineering layer connecting AI, security, knowledge systems and system architecture. It is presented as an ecosystem architecture layer, not as a claim that every envisioned component is already shipped.
+### 📖 [Librarian AI](https://github.com/VictorKVS/Librarian-AI) — **SHOWCASE CANDIDATE / EVIDENCE-GATED**
+Document-to-knowledge pipeline direction with entity extraction, graph tooling, LLM adapters and structured storage. [Evidence page →](products/librarian.html)
 
-[See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
+### 🛠 [DevSafe](https://github.com/VictorKVS/devsafe) — **SHOWCASE CANDIDATE / PARTIAL IMPLEMENTATION**
+Developer-safety and DevSecOps automation with concrete core modules and test assets. MVP promotion remains gated on a clean-host end-to-end proof. [Evidence page →](products/devsafe.html)
+
+### 🏭 [META-FOUNDRY](https://github.com/VictorKVS/META-FOUNDRY) — **PLATFORM / ARCHITECTURE VISION**
+Meta-engineering layer connecting AI, security, knowledge systems and system architecture. It is presented as architecture and vision, not as a claim that every envisioned component is shipped. [Architecture page →](products/meta-foundry.html)
+
+[Explore the product hub →](products/index.html) · [See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
 
 ---
 
@@ -58,10 +64,12 @@ flowchart TD
     KC --> FKB[Future Knowledge Domains]
 
     PX --> PRODUCTS[Products / MVP]
-    PRODUCTS --> SG[SecGraph]
     PRODUCTS --> OSINT[OSINT]
-    PRODUCTS --> UAG[Universal Agent Gateway]
+    PRODUCTS --> SG[SecGraph]
+    PRODUCTS --> MFS[MindForge Studio]
+    PRODUCTS --> UAG[Universal Agent]
     PRODUCTS --> LIB[Librarian AI]
+    PRODUCTS --> DS[DevSafe]
 
     VK --> SEC[Security Architecture]
     VK --> ENG[Software Engineering]
@@ -71,19 +79,7 @@ flowchart TD
     KB -. provenance .-> PX
 ```
 
-[Explore the full ecosystem architecture →](docs/ECOSYSTEM.md)
-
----
-
-## Engineering domains
-
-| 🛡 Security Architecture | 🧠 AI Systems & Agents | ⚙️ Software Engineering | 📚 Knowledge Engineering |
-|---|---|---|---|
-| Security architecture | MindForge / PX00 | Python | Engineering knowledge |
-| Threat modeling | Agent systems | Go | Security knowledge |
-| DevSecOps | RAG / MCP | C++ | Product knowledge |
-| OSINT | Knowledge graphs | Backend / Web | Research & evidence |
-| Security automation | AI research | Databases / Linux | ADR / benchmarks |
+[Explore the full ecosystem architecture →](architecture.html)
 
 ---
 
@@ -95,30 +91,26 @@ Technical decisions should be traceable through:
 
 `Context → Constraints → Alternatives → Evidence → Decision → Implementation → Tests → Security Review → Measurement`
 
-The portfolio is being normalized around the same principle. A project will not be promoted to **MVP** merely because a README uses the word. Flagship repositories are expected to show a reproducible execution path, current feature boundary, architecture, tests or validation evidence, known limitations and current status.
-
-Knowledge bases in this ecosystem connect official documentation, standards, research, implementation evidence and reproducible experiments to engineering decisions. Both people and agents should be able to answer not only **what** was chosen, but **why**.
+A project is not promoted to **MVP** merely because a README uses the word. Flagship repositories are expected to show a reproducible execution path, current feature boundary, architecture, tests or validation evidence, known limitations and current status.
 
 ---
 
 ## Portfolio normalization policy
 
-The GitHub account contains current products, active knowledge-building work and a substantial learning history. The transformation keeps all three but separates their public roles.
+The GitHub account contains current products, active knowledge-building work, architecture lineage and substantial learning history. The transformation preserves all of them but separates their public roles.
 
-Current rules:
+- `PX00` is `PROTECTED / ACTIVE CORE / SHOWCASE`: describe architecturally, do not restructure it.
+- Active and future knowledge-base repositories are `RESERVED / FUTURE KB` while the corpus is still being built.
+- Recently active repositories are left in place.
+- Older repositories are classified before any move as `SHOWCASE / LEARNING / ARCHIVE / MERGE-CANDIDATE`.
+- No destructive cleanup is performed merely for visual neatness.
+- Historical coursework is collapsed into an [Engineering Journey](journey.html) instead of competing with current products.
+- Human-readable navigation is paired with agent-readable `.ai/` metadata.
 
-- `PX00` is `PROTECTED / ACTIVE CORE / SHOWCASE`: describe and link architecturally, but do not restructure it;
-- active and future knowledge-base repositories are `RESERVED / FUTURE KB` and are not cleaned up while the knowledge corpus is still being built;
-- repositories with recent active work are left in place;
-- older repositories are classified before any move as `SHOWCASE / LEARNING / ARCHIVE / MERGE`;
-- no destructive cleanup is performed merely for visual neatness;
-- flagship README contracts expose problem, current capability, architecture, evidence, limitations and roadmap;
-- human-readable navigation is paired with agent-readable `.ai/` metadata.
-
-[Read the full transformation plan →](docs/PORTFOLIO_TRANSFORMATION_PLAN.md)
+[Repository classification →](docs/REPOSITORY_CLASSIFICATION.md) · [Transformation plan →](docs/PORTFOLIO_TRANSFORMATION_PLAN.md)
 
 ---
 
-**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Portfolio site:** planned · **LinkedIn:** to be connected
+**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Static showcase:** [site source](index.html)
 
 <sub>Building secure systems. Engineering intelligence. Sharing knowledge.</sub>
