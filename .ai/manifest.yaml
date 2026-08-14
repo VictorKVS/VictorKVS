@@ -1,4 +1,4 @@
-schema_version: "1.2"
+schema_version: "1.3"
 id: victorkvs-engineering-portfolio
 name: Viktor Kulichenko Engineering Portfolio
 type: portfolio-root
@@ -95,9 +95,11 @@ site:
   architecture: architecture.html
   products: products/index.html
   journey: journey.html
+  status_page: status.html
   error_page: 404.html
   static_site_marker: .nojekyll
   truth_policy: roadmap-is-not-shipped-functionality
+  publication_gate: github-pages-setting-and-live-url-not-confirmed
 
 domains:
   security:
@@ -165,6 +167,7 @@ normalization:
 navigation:
   github_profile: https://github.com/VictorKVS
   repository: https://github.com/VictorKVS/VictorKVS
+  status: status.html
   showcase_truth: docs/SHOWCASE_INDEX.md
   ecosystem_docs: docs/ECOSYSTEM.md
   repository_classification: docs/REPOSITORY_CLASSIFICATION.md
