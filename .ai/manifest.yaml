@@ -1,4 +1,4 @@
-schema_version: "1.1"
+schema_version: "1.2"
 id: victorkvs-engineering-portfolio
 name: Viktor Kulichenko Engineering Portfolio
 type: portfolio-root
@@ -25,10 +25,14 @@ architecture:
   lineage:
     mindforge:
       role: engineering-and-mvp-factory
+      historical_repository: MindForge
+      architecture_predecessor: MindForge-v2.0x
+      inspectable_product_surface: MindForge-Studio
       advanced_evolution: PX00
     PX00:
       role: autonomous-engineering-intelligence
       status: protected-active-core
+      mutation_policy: do-not-rename-merge-archive-move-or-restructure
       capabilities_direction:
         - orchestration
         - planning
@@ -39,7 +43,9 @@ architecture:
         - evidence-backed-knowledge
   knowledge_layer:
     root: KNOWLEDGE_CORE
+    related_active_repository: KNOWLEDGE_MASTER
     status: active-expansion
+    mutation_policy: preserve-during-kb-build
     expected_domains:
       - security
       - osint
@@ -50,13 +56,48 @@ architecture:
       - research
       - ai-agents
   product_layer:
+    showcase:
+      OSINT_deepseek:
+        status: verified-dev-baseline-active-development
+        evidence_page: products/osint-deepseek.html
+        promotion_gate: production-capabilities-not-yet-proven
+      MindForge-Studio:
+        status: partial-product-implementation
+        evidence_page: products/mindforge-studio.html
+        promotion_gate: clean-host-and-ci-proof
+      devsafe:
+        status: showcase-candidate-partial-implementation
+        evidence_page: products/devsafe.html
+        promotion_gate: end-to-end-clean-host-proof
     candidates:
-      - SecGraph
-      - OSINT_deepseek
-      - MindForge-Studio
-      - MVP
-      - Librarian-AI
-      - devsafe
+      SecGraph:
+        status: product-concept-implementation-incomplete
+        evidence_page: products/secgraph.html
+      MVP:
+        public_name: Universal Agent
+        status: prototype-partial-implementation
+        evidence_page: products/universal-agent.html
+      Librarian-AI:
+        status: prototype-candidate
+        evidence_page: products/librarian.html
+      META-FOUNDRY:
+        status: platform-vision
+        evidence_page: products/meta-foundry.html
+
+lineage_pages:
+  mindforge: products/mindforge-lineage.html
+  agents: products/agent-lineage.html
+  architecture: products/architecture-lineage.html
+
+site:
+  status: publish-ready-content-pages-not-confirmed-live
+  entrypoint: index.html
+  architecture: architecture.html
+  products: products/index.html
+  journey: journey.html
+  error_page: 404.html
+  static_site_marker: .nojekyll
+  truth_policy: roadmap-is-not-shipped-functionality
 
 domains:
   security:
@@ -70,7 +111,6 @@ domains:
       - threat-modeling
   ai:
     projects:
-      - MindForge
       - MindForge-Studio
       - PX00
       - AI_Neural_Networks
@@ -102,6 +142,10 @@ protected_repositories:
     public_role: advanced-mindforge-evolution
   OSINT_deepseek_poc:
     policy: preserve-while-active
+  KNOWLEDGE_CORE:
+    policy: preserve-during-active-kb-build
+  KNOWLEDGE_MASTER:
+    policy: preserve-during-active-kb-build
 
 normalization:
   inactivity_review_threshold_days: 3
@@ -121,3 +165,6 @@ normalization:
 navigation:
   github_profile: https://github.com/VictorKVS
   repository: https://github.com/VictorKVS/VictorKVS
+  showcase_truth: docs/SHOWCASE_INDEX.md
+  ecosystem_docs: docs/ECOSYSTEM.md
+  repository_classification: docs/REPOSITORY_CLASSIFICATION.md
