@@ -1,13 +1,6 @@
 name: Deploy engineering showcase to GitHub Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "*.html"
-      - ".nojekyll"
-      - "products/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -28,8 +21,6 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Assemble public site artifact
         shell: bash
