@@ -7,7 +7,7 @@
 I design secure, knowledge-driven software and AI systems with an emphasis on explainable engineering decisions, reproducible experiments, evidence-backed architecture and security by design.
 
 **Portfolio status:** evidence-backed engineering showcase in active refinement  
-**Website source:** [Engineering Intelligence](index.html) · **Architecture:** [Ecosystem map](architecture.html) · **Products:** [Product hub](products/index.html) · **Showcase truth model:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
+**Website source:** [Engineering Intelligence](index.html) · **Status:** [Truth surface](status.html) · **Architecture:** [Ecosystem map](architecture.html) · **Products:** [Product hub](products/index.html) · **Showcase truth model:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
 
 ---
 
@@ -39,10 +39,13 @@ Document-to-knowledge pipeline direction with entity extraction, graph tooling, 
 ### 🛠 [DevSafe](https://github.com/VictorKVS/devsafe) — **SHOWCASE CANDIDATE / PARTIAL IMPLEMENTATION**
 Developer-safety and DevSecOps automation with concrete core modules and test assets. MVP promotion remains gated on a clean-host end-to-end proof. [Evidence page →](products/devsafe.html)
 
+### 🔬 [Sokrat](https://github.com/VictorKVS/Sokrat) — **SHOWCASE / RESEARCH PROTOTYPE**
+Iterative research and orchestration prototype with concrete implementation and test structure. Historical `13/13` integration evidence is preserved as provenance, but is not presented as fresh clean-host verification. [Evidence page →](products/sokrat.html)
+
 ### 🏭 [META-FOUNDRY](https://github.com/VictorKVS/META-FOUNDRY) — **PLATFORM / ARCHITECTURE VISION**
 Meta-engineering layer connecting AI, security, knowledge systems and system architecture. It is presented as architecture and vision, not as a claim that every envisioned component is shipped. [Architecture page →](products/meta-foundry.html)
 
-[Explore the product hub →](products/index.html) · [See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
+[Explore the product hub →](products/index.html) · [See current portfolio status →](status.html) · [See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
 
 ---
 
@@ -70,6 +73,7 @@ flowchart TD
     PRODUCTS --> UAG[Universal Agent]
     PRODUCTS --> LIB[Librarian AI]
     PRODUCTS --> DS[DevSafe]
+    PRODUCTS --> SOK[Sokrat research prototype]
 
     VK --> SEC[Security Architecture]
     VK --> ENG[Software Engineering]
@@ -111,6 +115,6 @@ The GitHub account contains current products, active knowledge-building work, ar
 
 ---
 
-**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Static showcase:** [site source](index.html)
+**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Static showcase:** [site source](index.html) · **Current truth surface:** [status](status.html)
 
 <sub>Building secure systems. Engineering intelligence. Sharing knowledge.</sub>
