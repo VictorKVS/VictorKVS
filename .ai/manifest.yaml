@@ -1,4 +1,4 @@
-schema_version: "1.4"
+schema_version: "1.5"
 id: victorkvs-engineering-portfolio
 name: Viktor Kulichenko Engineering Portfolio
 type: portfolio-root
@@ -80,7 +80,10 @@ architecture:
     first_candidate:
       public_name: AI Meeting Secretary
       status: mvp-candidate-active-source
+      gate_0: passed
+      gate_1: designed-not-implemented
       promotion_audit: docs/AUDITS/AI_MEETING_SECRETARY_PROMOTION_AUDIT.md
+      standalone_blueprint: docs/BLUEPRINTS/AI_MEETING_SECRETARY_STANDALONE_BLUEPRINT.md
       promotion_gate: independent-clean-run-tests-security-and-privacy-review
 
 lineage_pages:
