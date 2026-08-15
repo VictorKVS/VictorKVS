@@ -124,7 +124,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_22.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_23.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
