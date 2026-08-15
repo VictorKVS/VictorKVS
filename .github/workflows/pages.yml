@@ -11,6 +11,7 @@ on:
       - "404.html"
       - ".nojekyll"
       - "products/**"
+      - "docs/**"
       - ".github/workflows/pages.yml"
   pull_request:
     branches: [main]
@@ -22,6 +23,7 @@ on:
       - "404.html"
       - ".nojekyll"
       - "products/**"
+      - "docs/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -45,15 +47,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          required=(index.html architecture.html journey.html status.html 404.html .nojekyll products)
+          required=(index.html architecture.html journey.html status.html 404.html .nojekyll products docs)
           for path in "${required[@]}"; do
             test -e "$path" || { echo "Missing required site path: $path" >&2; exit 1; }
           done
           mkdir -p _site
           cp index.html architecture.html journey.html status.html 404.html .nojekyll _site/
           cp -R products _site/products
+          cp -R docs _site/docs
 
-      - name: Validate local links and roadmap wording
+      - name: Validate local links
         shell: bash
         run: |
           set -euo pipefail
