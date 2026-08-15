@@ -93,7 +93,7 @@ lineage_pages:
   architecture: products/architecture-lineage.html
 
 site:
-  status: publish-ready-content-pages-not-confirmed-live
+  status: publish-ready-content-pages-site-not-enabled
   entrypoint: index.html
   architecture: architecture.html
   products: products/index.html
@@ -103,7 +103,11 @@ site:
   error_page: 404.html
   static_site_marker: .nojekyll
   truth_policy: roadmap-is-not-shipped-functionality
-  publication_gate: github-pages-setting-and-live-url-not-confirmed
+  publication_gate: manual-github-pages-enablement-required-integration-cannot-create-site
+  publication_evidence:
+    local_link_validation: passed-19-html-pages
+    latest_attempt: github-actions-run-31886274131
+    blocker: resource-not-accessible-by-integration-while-creating-pages-site
 
 protected_repositories:
   PX00:
@@ -120,7 +124,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_19.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_20.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
