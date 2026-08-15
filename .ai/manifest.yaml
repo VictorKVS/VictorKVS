@@ -80,6 +80,7 @@ architecture:
     first_candidate:
       public_name: AI Meeting Secretary
       status: mvp-candidate-active-source
+      promotion_audit: docs/AUDITS/AI_MEETING_SECRETARY_PROMOTION_AUDIT.md
       promotion_gate: independent-clean-run-tests-security-and-privacy-review
 
 lineage_pages:
