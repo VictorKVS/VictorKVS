@@ -1,4 +1,4 @@
-schema_version: "1.5"
+schema_version: "1.6"
 id: victorkvs-engineering-portfolio
 name: Viktor Kulichenko Engineering Portfolio
 type: portfolio-root
@@ -84,6 +84,7 @@ architecture:
       gate_1: designed-not-implemented
       promotion_audit: docs/AUDITS/AI_MEETING_SECRETARY_PROMOTION_AUDIT.md
       standalone_blueprint: docs/BLUEPRINTS/AI_MEETING_SECRETARY_STANDALONE_BLUEPRINT.md
+      extraction_checklist: docs/BLUEPRINTS/AI_MEETING_SECRETARY_GATE1_EXTRACTION_CHECKLIST.md
       promotion_gate: independent-clean-run-tests-security-and-privacy-review
 
 lineage_pages:
