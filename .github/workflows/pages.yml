@@ -1,6 +1,28 @@
 name: Deploy engineering showcase to GitHub Pages
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "architecture.html"
+      - "journey.html"
+      - "status.html"
+      - "404.html"
+      - ".nojekyll"
+      - "products/**"
+      - ".github/workflows/pages.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "architecture.html"
+      - "journey.html"
+      - "status.html"
+      - "404.html"
+      - ".nojekyll"
+      - "products/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -9,7 +31,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -19,23 +41,58 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Assemble public site artifact
         shell: bash
         run: |
           set -euo pipefail
+          required=(index.html architecture.html journey.html status.html 404.html .nojekyll products)
+          for path in "${required[@]}"; do
+            test -e "$path" || { echo "Missing required site path: $path" >&2; exit 1; }
+          done
           mkdir -p _site
           cp index.html architecture.html journey.html status.html 404.html .nojekyll _site/
           cp -R products _site/products
 
+      - name: Validate local links and roadmap wording
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          root = Path('_site')
+          html_files = list(root.rglob('*.html'))
+          failures = []
+
+          for page in html_files:
+              text = page.read_text(encoding='utf-8')
+              for href in re.findall(r'href=["\']([^"\']+)["\']', text):
+                  if href.startswith(('http://', 'https://', 'mailto:', '#')):
+                      continue
+                  target = (page.parent / href.split('#', 1)[0]).resolve()
+                  if href and not target.exists():
+                      failures.append(f'{page}: broken local link -> {href}')
+
+          if failures:
+              print('\n'.join(failures), file=sys.stderr)
+              sys.exit(1)
+          print(f'Validated {len(html_files)} HTML pages.')
+          PY
+
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
