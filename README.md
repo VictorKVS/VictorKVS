@@ -7,7 +7,7 @@
 I design secure, knowledge-driven software and AI systems with an emphasis on explainable engineering decisions, reproducible experiments, evidence-backed architecture and security by design.
 
 **Portfolio status:** evidence-backed engineering showcase in active refinement  
-**Website source:** [Engineering Intelligence](index.html) · **Status:** [Truth surface](status.html) · **Architecture:** [Ecosystem map](architecture.html) · **Products:** [Product hub](products/index.html) · **Showcase truth model:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
+**Website source:** [Engineering Intelligence](index.html) · **Status:** [Truth surface](status.html) · **Architecture:** [Ecosystem map](architecture.html) · **Products:** [Product hub](products/index.html) · **MVP Lab:** [Vibe → MVP pipeline](products/mvp-lab.html) · **Showcase truth model:** [Engineering Showcase](docs/SHOWCASE_INDEX.md) · **Agent metadata:** [`.ai/manifest.yaml`](.ai/manifest.yaml)
 
 ---
 
@@ -45,7 +45,10 @@ Iterative research and orchestration prototype with concrete implementation and 
 ### 🏭 [META-FOUNDRY](https://github.com/VictorKVS/META-FOUNDRY) — **PLATFORM / ARCHITECTURE VISION**
 Meta-engineering layer connecting AI, security, knowledge systems and system architecture. It is presented as architecture and vision, not as a claim that every envisioned component is shipped. [Architecture page →](products/meta-foundry.html)
 
-[Explore the product hub →](products/index.html) · [See current portfolio status →](status.html) · [See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
+### 🧪 [MVP Lab](products/mvp-lab.html) — **ACTIVE PRODUCTIZATION PIPELINE / EVIDENCE-GATED**
+Controlled extraction of promising Vibe Coding and engineering experiments into standalone products. Active source repositories stay untouched; candidates move through `VIBE-PROTOTYPE → MVP-CANDIDATE → VERIFIED MVP → SHOWCASE` only after reproducibility, tests, security/privacy and evidence gates are satisfied. The first inspected candidate is **AI Meeting Secretary**, currently `MVP-CANDIDATE / Gate 0 passed`, not a Verified MVP. [Promotion audit →](docs/AUDITS/AI_MEETING_SECRETARY_PROMOTION_AUDIT.md)
+
+[Explore the product hub →](products/index.html) · [Open MVP Lab →](products/mvp-lab.html) · [See current portfolio status →](status.html) · [See the working showcase truth model →](docs/SHOWCASE_INDEX.md)
 
 ---
 
@@ -55,6 +58,7 @@ Meta-engineering layer connecting AI, security, knowledge systems and system arc
 flowchart TD
     VK[Viktor Kulichenko] --> MF[MindForge Engineering / MVP Factory]
     MF --> PX[PX00 — Autonomous Engineering Intelligence]
+    MF --> LAB[MVP Lab — Vibe to verified products]
 
     PX --> ORCH[Orchestration & Planning]
     PX --> EXP[Expert Agents]
@@ -67,6 +71,8 @@ flowchart TD
     KC --> FKB[Future Knowledge Domains]
 
     PX --> PRODUCTS[Products / MVP]
+    LAB --> PRODUCTS
+    LAB --> AMS[AI Meeting Secretary — MVP candidate]
     PRODUCTS --> OSINT[OSINT]
     PRODUCTS --> SG[SecGraph]
     PRODUCTS --> MFS[MindForge Studio]
@@ -109,12 +115,13 @@ The GitHub account contains current products, active knowledge-building work, ar
 - Older repositories are classified before any move as `SHOWCASE / LEARNING / ARCHIVE / MERGE-CANDIDATE`.
 - No destructive cleanup is performed merely for visual neatness.
 - Historical coursework is collapsed into an [Engineering Journey](journey.html) instead of competing with current products.
+- Vibe Coding productization happens through [MVP Lab](products/mvp-lab.html); active source repositories are not rewritten in place.
 - Human-readable navigation is paired with agent-readable `.ai/` metadata.
 
-[Repository classification →](docs/REPOSITORY_CLASSIFICATION.md) · [Transformation plan →](docs/PORTFOLIO_TRANSFORMATION_PLAN.md)
+[Repository classification →](docs/REPOSITORY_CLASSIFICATION.md) · [Transformation plan →](docs/PORTFOLIO_TRANSFORMATION_PLAN.md) · [MVP Lab inventory →](docs/VIBE_MVP_LAB_INVENTORY.md)
 
 ---
 
-**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Static showcase:** [site source](index.html) · **Current truth surface:** [status](status.html)
+**GitHub:** [VictorKVS](https://github.com/VictorKVS) · **Static showcase:** [site source](index.html) · **Current truth surface:** [status](status.html) · **MVP Lab:** [productization pipeline](products/mvp-lab.html)
 
 <sub>Building secure systems. Engineering intelligence. Sharing knowledge.</sub>
