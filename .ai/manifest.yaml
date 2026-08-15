@@ -106,7 +106,7 @@ site:
   publication_gate: manual-github-pages-enablement-required-integration-cannot-create-site
   publication_evidence:
     local_link_validation: passed-19-html-pages
-    latest_attempt: github-actions-run-31888694144
+    latest_attempt: github-actions-run-31899908921
     blocker: configure-pages-failed-because-pages-site-is-not-enabled-for-repository
 
 protected_repositories:
@@ -124,7 +124,7 @@ protected_repositories:
 normalization:
   inactivity_review_threshold_days: 3
   inactivity_is_not_authorization_for_destructive_change: true
-  latest_classification_batch: docs/CLASSIFICATION_BATCH_24.md
+  latest_classification_batch: docs/CLASSIFICATION_BATCH_25.md
   excluded_classes:
     - protected-active-core
     - active-knowledge-base
