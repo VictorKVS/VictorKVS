@@ -11,6 +11,38 @@ I design secure, knowledge-driven software and AI systems with an emphasis on ex
 
 ---
 
+## Production dashboard · 18 August 2026
+
+The percentage below is **readiness of the current milestone**, not completion
+of the unlimited product vision. It is scored from repository evidence:
+scope 10%, architecture 15%, working path 25%, tests 20%, reproducible run 15%,
+demo/docs 10%, security/release gate 5%.
+
+| Project | Current maturity | Milestone readiness | Production state | Next evidence gate |
+|---|---|---:|---|---|
+| [father-quant-lab](https://github.com/VictorKVS/father-quant-lab) | Research MVP | **82%** | Active validation | Real-data and paper-trading evidence |
+| [OSINT_deepseek](https://github.com/VictorKVS/OSINT_deepseek) | Verified DEV | **78%** | Active M5 | Production MTProto, secrets and monitoring |
+| [Vibe-coding / BOOK·CRAFT](https://github.com/VictorKVS/Vibe-coding) | MVP candidate | **75%** | Media upgrade in progress | Publish Media API and recorded demo |
+| [FATHER Engineering Lab](https://github.com/VictorKVS/FATHER-Engineering-Competency-Lab) | Learning MVP | **74%** | Python case works | Prove C++ / Go tracks separately |
+| [FATHER Control Center](https://github.com/VictorKVS/FATHER-Automation-Control-Center) | Operating MVP | **66%** | Active portfolio control | Automated live registry refresh |
+| [DevSafe](https://github.com/VictorKVS/devsafe) | DEV MVP | **62%** | In development | Clean Windows install and demo |
+| [KNOWLEDGE_CORE](https://github.com/VictorKVS/KNOWLEDGE_CORE) | Knowledge MVP | **57%** | Active Security KB build | Corpus coverage and graph/RAG service |
+| [MindForge Studio](https://github.com/VictorKVS/MindForge-Studio) | Creative lab | **55%** | Product consolidation | One reproducible UI + pipeline |
+| [Librarian AI](https://github.com/VictorKVS/Librarian-AI) | Advanced prototype | **55%** | Stabilization | Clean install and current test proof |
+| [KNOWLEDGE_MASTER](https://github.com/VictorKVS/KNOWLEDGE_MASTER) | DEV prototype | **54%** | In development | Bounded claims and end-to-end proof |
+| `PX00` | Protected active core | **milestone-scored only** | Active / protected | Current milestone evidence pack |
+| [SecGraph](https://github.com/VictorKVS/SecGraph) | Concept / specification | **10%** | Designing | Runnable security-graph MVP |
+
+**Portfolio inventory:** 108 repositories reviewed. Product-facing work is
+separated from learning history, specifications, predecessors and empty
+placeholders. [Open the complete production register →](docs/PORTFOLIO_PRODUCTION_REGISTER.md)
+
+Status scale: `0–15 Concept` · `16–35 Prototype` · `36–55 MVP candidate` ·
+`56–70 Verified DEV` · `71–85 Verified MVP` · `86–95 Release candidate` ·
+`96–100 Production`.
+
+---
+
 ## Featured engineering
 
 Maturity labels are intentionally conservative. A roadmap, specification or README claim is not treated as shipped functionality without implementation and reproduction evidence.
