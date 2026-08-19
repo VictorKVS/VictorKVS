@@ -50,6 +50,9 @@ Maturity labels are intentionally conservative. A roadmap, specification or READ
 ### 🧠 PX00 — **PROTECTED ACTIVE CORE / ADVANCED MINDFORGE EVOLUTION**
 Autonomous Engineering Intelligence direction: an advanced evolution of the MindForge concept combining orchestration, planning, expert agents, critics and verification, progress metrics, project lifecycle control and evidence-backed knowledge. PX00 is intentionally **not restructured, renamed, merged or moved** during portfolio normalization; the portfolio describes only its architectural role.
 
+### 💎 [FATHER Search & Analytics Center](products/father-search-analytics.html) — **PRODUCT DEFINITION / INTELLIGENCE CORE**
+Search Intelligence, lawful OSINT, research validation and knowledge-refinery product. It tracks modern research and technologies, compares methods and combinations under explicit conditions, and turns verified evidence into reusable patterns, skills and agent memory. Current maturity is **M0**: product passport, search regulation, architecture and showcase are complete; the first M1 proving ground is the 152-FZ Security Knowledge vertical slice. [Live product site →](https://father-search-analytics.cocmosxx2.chatgpt.site) · [Full product passport →](https://github.com/VictorKVS/KNOWLEDGE_CORE/blob/main/docs/FATHER_SEARCH_ANALYTICS_CENTER_PRODUCT.md)
+
 ### 📚 [KNOWLEDGE_CORE](https://github.com/VictorKVS/KNOWLEDGE_CORE) — **ACTIVE KNOWLEDGE SYSTEM**
 Evidence-driven knowledge infrastructure for provenance, requirements, professional knowledge and security knowledge. Active and future knowledge-base domains remain protected from premature consolidation while their boundaries are still being established.
 
